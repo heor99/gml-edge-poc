@@ -14,7 +14,7 @@ Python 3.8 ou plus, **bibliothèque standard uniquement** : aucune installation,
 ## 1. Procédure de test en local
 
 ```bash
-git clone <URL_DU_DEPOT>
+git clone https://github.com/heor99/gml-edge-poc
 cd gml-edge-poc
 python --version            # 3.8 minimum (python3 sous macOS / Linux)
 ```
