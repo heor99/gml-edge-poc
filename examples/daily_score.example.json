@@ -1,0 +1,53 @@
+{
+  "vehicle_id": "GML-POC-001",
+  "schema_version": "1.0",
+  "date": "2023-03-15",
+  "source_file": "accelerometer_data.csv",
+  "samples": {
+    "total": 10,
+    "valid": 10,
+    "rejected": 0,
+    "sampling_rate_hz": 1.0,
+    "duration_s": 9.0
+  },
+  "parameters": {
+    "unit": "m/s2",
+    "filter": "passe-bas 1er ordre (EMA)",
+    "tau_s": 0.1,
+    "harsh_braking_ms2": -2.5,
+    "braking_release_ms2": -1.5,
+    "harsh_accel_ms2": 2.5,
+    "accel_release_ms2": 1.5,
+    "harsh_corner_ms2": 3.0,
+    "corner_release_ms2": 2.0
+  },
+  "events": [
+    {
+      "type": "HARSH_BRAKING",
+      "data_row": 6,
+      "start_ts": 1678880005.0,
+      "peak_raw_ms2": -3.45,
+      "peak_filtered_ms2": -3.206,
+      "end_ts": 1678880006.0,
+      "duration_s": 1.0,
+      "peak_g": 0.352,
+      "start_iso": "2023-03-15T11:33:25+00:00"
+    }
+  ],
+  "counts": {
+    "HARSH_BRAKING": 1,
+    "HARSH_ACCELERATION": 0,
+    "HARSH_CORNERING": 0
+  },
+  "score": {
+    "value": 90,
+    "max": 100,
+    "grade": "B",
+    "method": "100 - 10 x freinage violent - 5 x accélération brusque - 8 x virage brusque (plancher 0)"
+  },
+  "insurance": {
+    "bonus_eligible": true,
+    "threshold": 80
+  },
+  "status": "OK"
+}

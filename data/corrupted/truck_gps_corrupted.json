@@ -1,0 +1,9 @@
+[
+  { "id": 1, "timestamp": "08:00:00", "lat": 45.8100, "lon": 4.7500 },
+  { "id": 2, "timestamp": "08:00:10", "lat": "N/A", "lon": 4.7800 },
+  { "id": 3, "timestamp": "08:00:20" },
+  { "id": 4, "timestamp": "08:00:30", "lat": 145.7600, "lon": 4.8357 },
+  "ligne illisible",
+  { "id": 6, "timestamp": "08:00:50", "lat": 45.7600, "lon": 4.8357 },
+  { "id": 7, "timestamp": "08:01:00", "lat": 45.7500, "lon": 4.8500 }
+]
